@@ -1,0 +1,9 @@
+#!/ur.bin/env bash
+# Usiing untill to print text on the terminal
+
+i="10"
+
+until [ "$i" -eq "0" ]; do
+	echo "Best School"
+	((i--))
+done
