@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Bash script that displays the content of the current directory
 
-LIST="$(ls)"
+LIST=($(ls))
 
-for i in "$LIST"; do
+for i in "${LIST[@]}"; do
 	echo "$i"
 done
