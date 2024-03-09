@@ -1,0 +1,6 @@
+#!//usr/bin/env bash
+
+# shellcheck disable=SC2009
+
+# Display lines containing the word "bash" using ps command
+ps axo user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,command --forest | grep bash
