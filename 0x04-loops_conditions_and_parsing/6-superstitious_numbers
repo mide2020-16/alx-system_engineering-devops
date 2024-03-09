@@ -10,11 +10,11 @@ while [ "$i" -le 20 ]; do
 			;;
 		8)
 			echo "$i"
-			echo "$i bad luck from Japan"
+			echo "bad luck from Japan"
 			;;
 		16)
 			echo "$i"
-			echo "$i bad luck from Italy"
+			echo "bad luck from Italy"
 			;;
 		*)
 			echo "$i"
