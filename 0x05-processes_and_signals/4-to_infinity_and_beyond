@@ -1,14 +1,8 @@
 #!/usr/bin/env bash
-# Function to display the message
-display_message() {
-    echo "To infinity and beyond"
-}
-
-# Trap SIGINT signal (Ctrl+C) to exit gracefully
-trap 'echo exit 0' SIGINT
-
-# Infinite loop
-while true; do
-    display_message
-    sleep 2
+# A bash script that executes an indefinite loop
+i=10
+while (( i > 0))
+do
+	echo "To infinity and beyond"
+	sleep 2
 done

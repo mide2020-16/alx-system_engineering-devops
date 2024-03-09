@@ -1,7 +1,3 @@
 #!/usr/bin/env bash
-# Header
-
-echo "USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND"
-
-# Display processes using ps command
-ps axo user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,command --forest | tail -n +2
+# A bash script that shows the proccess status in a system
+ps -auxf
