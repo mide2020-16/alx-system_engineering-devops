@@ -7,7 +7,6 @@ while (("$i" < "10")); do
 
 	if [ "$i" -eq 9 ]; then
 		echo "Hi"
-		echo "Best School"
 	fi
 
 	echo "Best School"
