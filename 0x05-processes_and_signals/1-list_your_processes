@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-
 # Header
+
 echo "USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND"
 
 # Display processes using ps command

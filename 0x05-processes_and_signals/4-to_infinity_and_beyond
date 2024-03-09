@@ -5,7 +5,7 @@ display_message() {
 }
 
 # Trap SIGINT signal (Ctrl+C) to exit gracefully
-trap 'echo "Exiting..."; exit 0' SIGINT
+trap 'echo exit 0' SIGINT
 
 # Infinite loop
 while true; do

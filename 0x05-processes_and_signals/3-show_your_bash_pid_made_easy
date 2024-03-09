@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Get the PID of the current script
 
 # Get the PID of processes containing the word "bash" in their name
 bash_pids=$(pgrep -f bash)
@@ -9,6 +8,9 @@ for pid in $bash_pids; do
     # Get the process name
     process_name=$(tr '\0' ' ' < "/proc/$pid/cmdline" | awk '{print $1}')
 
-    # Display PID and process name
-    echo "$pid $process_name"
+    # Check if the process name contains "bash"
+    if [[ $process_name == *bash* ]]; then
+        # Display PID and process name
+        echo "$pid $process_name"
+    fi
 done
