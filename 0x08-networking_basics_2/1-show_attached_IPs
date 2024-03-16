@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# using ifconfig to print active ip
+ifconfig | grep -o 'inet [0-9.]*' | cut -f 2 -d " "
